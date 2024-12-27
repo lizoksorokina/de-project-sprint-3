@@ -1,6 +1,6 @@
 drop table if exists mart.f_customer_retention
 create table if not exists mart.f_customer_retention (
-    id bigint,
+    id serial PRIMARY KEY,
     new_customers_count bigint,
     returning_customers_count bigint,
     refunded_customer_count bigint,
